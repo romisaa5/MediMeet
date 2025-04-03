@@ -1,4 +1,4 @@
-# MediMeet 🚀  
+# MediMeet 🏥  
 
 MediMeet is still in development. Stay tuned for updates!  
 
