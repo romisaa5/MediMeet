@@ -1,25 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:medimeet/core/Routing/app_router.dart';
+import 'package:medimeet/medimeet_app.dart';
 
 void main() {
-  runApp(const MediMeet());
-}
-
-class MediMeet extends StatelessWidget {
-  const MediMeet({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-    debugShowCheckedModeBanner: false,
-    home: Scaffold(
-      appBar: AppBar(
-        title: const Text('MediMeet'),
-        backgroundColor: Colors.blue,
-      ),
-      body: const Center(
-        child: Text('Welcome to MediMeet!'),
-      ),
-    )
-     );
-  }
+  runApp( MedimeetApp(appRouter: AppRouter(),));
 }
