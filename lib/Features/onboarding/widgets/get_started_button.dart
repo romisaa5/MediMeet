@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:medimeet/core/Routing/app_router.dart';
 import 'package:medimeet/core/Routing/routes.dart';
 import 'package:medimeet/core/Themes/colors.dart';
 import 'package:medimeet/core/Themes/styles.dart';
