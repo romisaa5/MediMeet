@@ -11,8 +11,11 @@ class DoctorImageAndText extends StatelessWidget {
     return Stack(
       alignment: Alignment.center,
       children: [
-        SvgPicture.asset('assets/images/medimeet_logo_opacity.svg',width: 443.w,
-            height: 443.h,),
+        SvgPicture.asset(
+          'assets/svgs/medimeet_logo_opacity.svg',
+          width: 443.w,
+          height: 443.h,
+        ),
         Container(
           foregroundDecoration: BoxDecoration(
             gradient: LinearGradient(
@@ -34,7 +37,8 @@ class DoctorImageAndText extends StatelessWidget {
           bottom: 5.h,
           child: Text(
             'Best Doctor\n Appointment App',
-            style:TextStyles.font32BlueBold.copyWith(height: 1.4),textAlign:TextAlign.center ,
+            style: TextStyles.font32BlueBold.copyWith(height: 1.4),
+            textAlign: TextAlign.center,
           ),
         ),
       ],

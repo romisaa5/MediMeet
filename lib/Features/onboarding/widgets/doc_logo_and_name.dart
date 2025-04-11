@@ -13,7 +13,7 @@ class DocLogoAndName extends StatelessWidget {
       spacing: 10.w,
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        SvgPicture.asset('assets/images/logo.svg', height: 38.h, width: 38.w),
+        SvgPicture.asset('assets/svgs/logo.svg', height: 38.h, width: 38.w),
         Text('MediMeet', style: TextStyles.font24Black700Weight),
       ],
     );
