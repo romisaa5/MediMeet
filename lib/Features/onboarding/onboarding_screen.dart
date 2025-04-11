@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:medimeet/Features/onboarding/widgets/doc_logo_and_name.dart';
 import 'package:medimeet/Features/onboarding/widgets/doctor_image_and_text.dart';
-import 'package:medimeet/Features/onboarding/widgets/get_started_button.dart';
+import 'package:medimeet/core/Routing/routes.dart';
+import 'package:medimeet/core/Widgets/custom_button.dart';
 import 'package:medimeet/core/Themes/styles.dart';
 
 class OnboardingScreen extends StatelessWidget {
@@ -32,7 +33,12 @@ class OnboardingScreen extends StatelessWidget {
                         style: TextStyles.font13GreyReguler,
                         textAlign: TextAlign.center,
                       ),
-                      GetStartedButton(),
+                      CustomButton(
+                        text: 'Get Started',
+                        onPressed: () {
+                          Navigator.pushNamed(context, Routes.loginScreen);
+                        },
+                      ),
                     ],
                   ),
                 ),

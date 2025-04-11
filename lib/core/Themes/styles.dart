@@ -8,20 +8,24 @@ class TextStyles {
     color: Colors.black,
     fontWeight: FontWeight.w700,
   );
-  static TextStyle font32BlueBold= TextStyle(
+  static TextStyle font32BlueBold = TextStyle(
     fontSize: 32.sp,
     color: ColorsManager.mainBlue,
     fontWeight: FontWeight.bold,
   );
-   static TextStyle font13GreyReguler= TextStyle(
+  static TextStyle font13GreyReguler = TextStyle(
     fontSize: 13.sp,
     color: ColorsManager.grey,
     fontWeight: FontWeight.normal,
   );
-   static TextStyle font16WhiteSemibold= TextStyle(
+  static TextStyle font14GreyReguler = TextStyle(
+    fontSize: 14.sp,
+    color: ColorsManager.grey,
+    fontWeight: FontWeight.normal,
+  );
+  static TextStyle font16WhiteSemibold = TextStyle(
     fontSize: 16.sp,
     color: Colors.white,
     fontWeight: FontWeight.w600,
-
   );
 }
