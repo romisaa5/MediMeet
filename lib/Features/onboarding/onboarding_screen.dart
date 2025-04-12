@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:medimeet/Features/onboarding/widgets/doc_logo_and_name.dart';
 import 'package:medimeet/Features/onboarding/widgets/doctor_image_and_text.dart';
+import 'package:medimeet/Features/onboarding/widgets/get_started_button.dart';
 import 'package:medimeet/core/Routing/routes.dart';
 import 'package:medimeet/core/Widgets/custom_button.dart';
 import 'package:medimeet/core/Themes/styles.dart';
@@ -26,18 +27,18 @@ class OnboardingScreen extends StatelessWidget {
                   child: Column(
                     spacing: 30.h,
                     crossAxisAlignment: CrossAxisAlignment.center,
-              
+
                     children: [
                       Text(
                         'Manage and schedule all of your medical appointments easily with Docdoc to get a new experience.',
                         style: TextStyles.font13GreyReguler,
                         textAlign: TextAlign.center,
                       ),
-                      CustomButton(
-                        text: 'Get Started',
+                      GetStartedButton(
                         onPressed: () {
                           Navigator.pushNamed(context, Routes.loginScreen);
                         },
+                        text: 'Get Started',
                       ),
                     ],
                   ),
