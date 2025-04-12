@@ -36,7 +36,7 @@ A clean and user-friendly login screen UI has been designed and implemented.
 #### 👀 Preview
 
 <p align="center">
-  <img src="assets/README assets/login_screen.png" alt="Login Screen" width="300">
+  <img src="assets/README assets/login_screen.PNG" alt="Login Screen" width="300">
 </p>
 
 ---
