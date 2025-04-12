@@ -36,6 +36,4 @@ Here’s a preview of the completed onboarding screen:
 Stay tuned for more updates and exciting features!  
 We’re working hard to deliver a seamless and beautiful app experience.
 
----
 
-👩‍💻 *Built with passion and care by the MediMeet team*
