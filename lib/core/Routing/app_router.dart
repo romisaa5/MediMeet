@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:medimeet/Features/Forget%20password/presentation/views/forget_password.dart';
 import 'package:medimeet/Features/login/UI/screens/login_screen.dart';
 import 'package:medimeet/Features/onboarding/onboarding_screen.dart';
 import 'package:medimeet/core/Routing/routes.dart';
@@ -14,6 +15,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const Placeholder());
       case Routes.homeScreen:
         return MaterialPageRoute(builder: (_) => const Placeholder());
+      case Routes.forgetPasswordScreen:
+        return MaterialPageRoute(builder: (_) => ForgetPassword());
       default:
         return MaterialPageRoute(builder: (_) => Scaffold(
               body: Center(
