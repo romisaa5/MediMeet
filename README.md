@@ -30,7 +30,16 @@ Here’s a preview of the completed onboarding screen:
 </p>
 
 ---
+### 🔐 Login Screen (UI Only)  
+A clean and user-friendly login screen UI has been designed and implemented.
 
+#### 👀 Preview
+
+<p align="center">
+  <img src="assets/README assets/login_screen.png" alt="Login Screen" width="300">
+</p>
+
+---
 
 ## 🔥 More Features Coming Soon!
 Stay tuned for more updates and exciting features!  
