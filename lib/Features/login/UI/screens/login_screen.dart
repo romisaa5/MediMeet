@@ -47,6 +47,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     spacing: 20.h,
                     children: [
                       AppTextFormField(
+                        controller: emailController,
                         hintText: 'Email',
                         validator: (value) {
                           if (value == null || value.isEmpty) {
@@ -60,6 +61,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         },
                       ),
                       AppTextFormField(
+                        controller: passwordController,
                         isObscureText: isObsecuretext,
                         suffixIcon: IconButton(
                           onPressed: () {
@@ -118,7 +120,9 @@ class _LoginScreenState extends State<LoginScreen> {
                         textStyle: TextStyles.font16WhiteSemibold,
                         buttonText: 'Login',
                         onPressed: () {
-                          Navigator.pushNamed(context, Routes.homeScreen);
+                          if (formKey.currentState!.validate()) {
+                            Navigator.pushNamed(context, Routes.homeScreen);
+                          }
                         },
                       ),
                       SizedBox(height: 20.h),
