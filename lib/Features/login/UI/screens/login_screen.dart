@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:medimeet/Features/login/UI/widgets/dont_have_account_text.dart';
 import 'package:medimeet/Features/login/UI/widgets/remember_me.dart';
 import 'package:medimeet/Features/login/UI/widgets/terms_and_conditions_text.dart';
+import 'package:medimeet/core/Helpers/validation_methods.dart';
 import 'package:medimeet/core/Routing/routes.dart';
 import 'package:medimeet/core/Themes/colors.dart';
 import 'package:medimeet/core/Themes/styles.dart';
@@ -35,7 +36,6 @@ class _LoginScreenState extends State<LoginScreen> {
               children: [
                 SizedBox(height: 30.h),
                 Text('Welcome Back', style: TextStyles.font24BlueBold),
-
                 Text(
                   "We're excited to have you back, can't wait to see what you've been up to since you last logged in",
                   style: TextStyles.font14GreyReguler,
@@ -50,14 +50,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         controller: emailController,
                         hintText: 'Email',
                         validator: (value) {
-                          if (value == null || value.isEmpty) {
-                            return 'Please enter your email';
-                          }
-                          final emailRegex = RegExp(r'^[^@]+@[^@]+\.[^@]+');
-                          if (!emailRegex.hasMatch(value)) {
-                            return 'Please enter a valid email address';
-                          }
-                          return null;
+                          ValidationMethods.validateEmail(value);
                         },
                       ),
                       AppTextFormField(
@@ -77,20 +70,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                         hintText: 'password',
                         validator: (value) {
-                          if (value == null || value.isEmpty) {
-                            return 'Please enter your password';
-                          }
-                          if (value.length < 8) {
-                            return 'Password must be at least 8 characters long';
-                          }
-                          final passwordRegex = RegExp(
-                            r'^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$',
-                          );
-                          if (!passwordRegex.hasMatch(value)) {
-                            return 'Password must contain at least one letter and one number';
-                          }
-
-                          return null;
+                          ValidationMethods.validatePassword(value);
                         },
                       ),
 
